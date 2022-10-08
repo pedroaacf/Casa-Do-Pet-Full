@@ -1,0 +1,22 @@
+{
+  "name": "casa-do-pet",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pedroaacf/Casa-do-Pet.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pedroaacf/Casa-do-Pet/issues"
+  },
+  "homepage": "https://github.com/pedroaacf/Casa-do-Pet#readme",
+  "dependencies": {
+    "bootstrap": "^5.2.2"
+  }
+}
