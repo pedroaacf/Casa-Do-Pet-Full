@@ -1,0 +1,17 @@
+body{
+    background-image: url("/assets/bg-home-principal.jpg");
+}
+/* This is a single-line comment 
+.card-group img{
+    display: block;
+    width: 50%;
+    height: 70%;
+    margin-right: auto;
+    margin-left: auto;
+}
+*/
+.card-img-top {
+    width: 100%;
+    height: 15vw;
+    object-fit: cover;
+}
