@@ -11,37 +11,40 @@
   <body>
     <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
 
-    <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
-        <div class="container-fluid">
-          <a class="navbar-brand ms-3" href="#"><img src="assets/icon.png" alt="icone" width="54" height="52"></a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNavDropdown">
-            <form class="d-flex me-3" role="search">
-              <div class="input-group" style="margin-left: 18rem;">
-                <span class="input-group-text" id="basic-addon1"><img src="/assets/place-localizer.png" alt="" style="width: 25px; height: 25px;"></span>
-                <input type="text" class="form-control me-2" placeholder="Encontre alguém perto de você" aria-label="Username" aria-describedby="basic-addon1" style="width: 20rem;">
-              </div>
-              <button class="btn btn-success" type="submit">Procurar</button>
-            </form>
-            <ul class="navbar-nav">
-              <li class="nav-item ms-5" style="margin-right: 2rem; font-size: 1.4rem;">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
-              </li>
-              <li class="nav-item" style="margin-right: 2rem; font-size: 1.4rem;">
-                <a class="nav-link active" href="#">Entrar</a>
-              </li>
-              <li class="nav-item" style="margin-right: 2rem; font-size: 1.4rem;">
-                <a class="nav-link active" href="#">Cadastrar-se</a>
-              </li>
-              <li class="nav-item" style="font-size: 1.4rem;">
-                <a class="nav-link active" href="#">Como Funciona</a>
-              </li>
-            </ul>
-          </div>
+    <nav class="navbar navbar-expand-lg bg-primary navbar-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand ms-3 me-5" href="#"><img src="assets/icon.png" alt="icone" width="54" height="52"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item fs-5 " style="margin-right: 2rem;">
+              <a class="nav-link active" aria-current="page" href="/home.html">Home</a>
+            </li>
+            <li class="nav-item fs-5" style="margin-right: 2rem;">
+              <a class="nav-link active" href="/login.html">Entrar</a>
+            </li>
+            <li class="nav-item fs-5" style="margin-right: 2rem;">
+              <a class="nav-link active" href="/cadastro.html">Cadastrar-se</a>
+            </li>
+            <li class="nav-item fs-5">
+              <a class="nav-link active" href="/comoFunciona.html">Como Funciona</a>
+            </li>
+          </ul>
+          <form class="d-flex me-5" role="search">
+            <div class="rounded-pill bg-light d-flex" style="margin-left: 25rem; width: 310px;">
+                <input type="text" class="form-control rounded-pill border-0 outiline-0 bg-transparent shadow-none" placeholder="Encontre alguém perto de você" aria-label="Search ...">
+                <span class="pe-2 pt-1 pb-1"> 
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                    <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                  </svg>  
+                </span>
+            </div>
+          </form>
         </div>
-      </nav>
+      </div>
+    </nav>
 
 
       <div class="container px-0 mt-3" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
@@ -65,7 +68,9 @@
             </div>
   
             <div class="ms-2">
-              <button type="button" class="btn btn-success btn-lg me-3" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">Iniciar Conversa</button>
+              <a href="/bate-papo.html">
+                <button type="button" class="btn btn-success btn-lg me-3" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">Iniciar Conversa</button>
+              </a>
             </div>
   
           </div>
@@ -84,11 +89,43 @@
                   </div>
                 </div>
               </div>
-              <div class="row">
-                <div class="card text-center rounded" style="width: 28rem; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
-                  <div class="card-body">
-                  <h5 class="card-title">Tamanhos aceitos</h5>
-                  <p class="card-text mt-4"><p class="d-inline-block fw-bold">5kg &nbsp; 5-10kg &nbsp; 10-20kg &nbsp;</p> <p class="d-inline-block text-muted">20-40kg &nbsp; 40kg+</p></p>
+              <div class="row mt-5 me-5">
+                <div class="d-flex justify-content-center">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="56" height="56" fill="currentColor" class="bi bi-house-door" viewBox="0 0 16 16">
+                  <path d="M8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4.5a.5.5 0 0 0 .5-.5v-4h2v4a.5.5 0 0 0 .5.5H14a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146zM2.5 14V7.707l5.5-5.5 5.5 5.5V14H10v-4a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5v4H2.5z"/>
+                  </svg>
+                </div>
+                <div class="d-flex justify-content-center">
+                  <p>Mora em Casa</p>
+                </div>
+                <div class="d-flex justify-content-center mb-2">
+                  <a style="color: #00A6CE; text-decoration: none;" data-bs-toggle="collapse" href="#collapseExample">Ver Mais</a>
+                </div>
+                <div class="d-flex justify-content-center">
+                  <div class="collapse" id="collapseExample">
+                    <div class="card card-body">
+                      <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <img src="/assets/casa.jpg" class="d-block w-100" alt="Imagem Propriedade">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="/assets/quintal.jpg" class="d-block w-100" alt="Imagem Propriedade">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="/assets/cama.jpg" class="d-block w-100" alt="Imagem Propriedade">
+                          </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Next</span>
+                        </button>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -100,7 +137,7 @@
                 <div class="card rounded text-center" style="width: 45rem; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
                   <div class="card-body">
                   <h5 class="card-title">Dias disponíveis</h5>
-                  <p class="card-text mt-4"><p class="d-inline-block fw-bold">Domingo &nbsp; Segunda-feira &nbsp; Terça-feira &nbsp; Quarta-feira &nbsp; Quinta-feira &nbsp; Sexta-feira &nbsp;</p><p class="d-inline-block text-muted">&nbsp;Sabado</p></p>
+                  <p class="card-text mt-4"><p class="d-inline-block fw-bold">Domingo &nbsp; Segunda-feira &nbsp; Terça-feira &nbsp; Quarta-feira &nbsp; Quinta-feira &nbsp; Sexta-feira &nbsp;</p><p class="d-inline-block text-muted">&nbsp;Sábado</p></p>
                   </div>
                 </div>
               </div>
@@ -118,64 +155,20 @@
       </div>
       
 
-
-
-      <!-- Write your comments here 
-      <div class="container">
-        <div class="row">
-          <div class="col" style="height: 150px;">
-            <div class="card rounded" style="width: 28rem; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
-              <div class="card-body">
-                <h5 class="card-title"><p class="text-center">Descrição</p></h5>
-                <p class="card-text; text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed velit elit, gravida eu nulla in, tristique elementum ex. Etiam dapibus interdum neque, eget imperdiet est vulputate ac. Mauris ultricies pulvinar lacus, vitae sodales justo aliquet vel. Integer scelerisque turpis sit amet rhoncus dapibus. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card rounded text-center" style="width: 44rem; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
-              <div class="card-body">
-              <h5 class="card-title">Dias disponíveis</h5>
-              <p class="card-text mt-4"><p class="d-inline-block fw-bold">Domingo &nbsp; Segunda-feira &nbsp; Terça-feira &nbsp; Quarta-feira &nbsp; Quinta-feira &nbsp; Sexta-feira &nbsp;</p><p class="d-inline-block text-muted">&nbsp;Sabado</p></p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col">
-            <div class="card text-center rounded" style="width: 28rem; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
-              <div class="card-body">
-              <h5 class="card-title">Tamanhos aceitos</h5>
-              <p class="card-text mt-4"><p class="d-inline-block fw-bold">5kg &nbsp; 5-10kg &nbsp; 10-20kg &nbsp;</p> <p class="d-inline-block text-muted">20-40kg &nbsp; 40kg+</p></p>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card text-center rounded" style="width: 44rem; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
-              <div class="card-body">
-              <h5 class="card-title">Tamanhos aceitos</h5>
-              <p class="card-text"><p class="d-inline-block fw-bold">5kg &nbsp; 5-10kg &nbsp; 10-20kg &nbsp;</p> <p class="d-inline-block text-muted">20-40kg &nbsp; 40kg+</p></p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      -->
-      
-
       <div style="background-color: #9A9A9A; height: 13vh;">
         <div class="container">
           <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
             <p class="col-md-4 mb-0" style="color: #EFEFEF;">&copy; 2022 Casa do Pet, Inc</p>
         
-            <a href="/" class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
+            <a href="/home.html" class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
               <img src="/assets/icon.png" alt="ícone" style="width: 54px; height: 52px;">
             </a>
         
             <ul class="nav col-md-4 justify-content-end">
-              <li class="nav-item"><a href="#" class="nav-link px-2" style="color: #EFEFEF;">Home</a></li>
-              <li class="nav-item"><a href="#" class="nav-link px-2" style="color: #EFEFEF;">Entrar</a></li>
-              <li class="nav-item"><a href="#" class="nav-link px-2" style="color: #EFEFEF;">Cadastrar-se</a></li>
-              <li class="nav-item"><a href="#" class="nav-link px-2" style="color: #EFEFEF;">Como Funciona</a></li>
+              <li class="nav-item"><a href="/home.html" class="nav-link px-2" style="color: #EFEFEF;">Home</a></li>
+              <li class="nav-item"><a href="/login.html" class="nav-link px-2" style="color: #EFEFEF;">Entrar</a></li>
+              <li class="nav-item"><a href="/cadastro.html" class="nav-link px-2" style="color: #EFEFEF;">Cadastrar-se</a></li>
+              <li class="nav-item"><a href="/comoFunciona.html" class="nav-link px-2" style="color: #EFEFEF;">Como Funciona</a></li>
             </ul>
           </footer>
         </div>

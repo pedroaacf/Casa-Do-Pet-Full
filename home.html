@@ -11,34 +11,37 @@
   <body>
     <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
 
-    <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+    <nav class="navbar navbar-expand-lg bg-primary navbar-dark">
       <div class="container-fluid">
-        <a class="navbar-brand ms-3" href="#"><img src="assets/icon.png" alt="icone" width="54" height="52"></a>
+        <a class="navbar-brand ms-3 me-5" href="#"><img src="assets/icon.png" alt="icone" width="54" height="52"></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
-          <form class="d-flex me-3" role="search">
-            <div class="input-group" style="margin-left: 18rem;">
-              <span class="input-group-text" id="basic-addon1"><img src="/assets/place-localizer.png" alt="" style="width: 25px; height: 25px;"></span>
-              <input type="text" class="form-control me-2" placeholder="Encontre alguém perto de você" aria-label="Username" aria-describedby="basic-addon1" style="width: 20rem;">
-            </div>
-            <button class="btn btn-success" type="submit">Procurar</button>
-          </form>
           <ul class="navbar-nav">
-            <li class="nav-item ms-5" style="margin-right: 2rem; font-size: 1.4rem;">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            <li class="nav-item fs-5 rounded" style="margin-right: 2rem; background-color: #5f94ff; box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);">
+              <a class="nav-link active" aria-current="page" href="/home.html">Home</a>
             </li>
-            <li class="nav-item" style="margin-right: 2rem; font-size: 1.4rem;">
-              <a class="nav-link active" href="#">Entrar</a>
+            <li class="nav-item fs-5" style="margin-right: 2rem;">
+              <a class="nav-link active" href="/login.html">Entrar</a>
             </li>
-            <li class="nav-item" style="margin-right: 2rem; font-size: 1.4rem;">
-              <a class="nav-link active" href="#">Cadastrar-se</a>
+            <li class="nav-item fs-5" style="margin-right: 2rem;">
+              <a class="nav-link active" href="/cadastro.html">Cadastrar-se</a>
             </li>
-            <li class="nav-item" style="font-size: 1.4rem;">
-              <a class="nav-link active" href="#">Como Funciona</a>
+            <li class="nav-item fs-5">
+              <a class="nav-link active" href="/comoFunciona.html">Como Funciona</a>
             </li>
           </ul>
+          <form class="d-flex me-5" role="search">
+            <div class="rounded-pill bg-light d-flex" style="margin-left: 25rem; width: 310px;">
+                <input type="text" class="form-control rounded-pill border-0 outiline-0 bg-transparent shadow-none" placeholder="Encontre alguém perto de você" aria-label="Search ...">
+                <span class="pe-2 pt-1 pb-1"> 
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                    <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                  </svg>  
+                </span>
+            </div>
+          </form>
         </div>
       </div>
     </nav>
@@ -103,15 +106,15 @@
         <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
           <p class="col-md-4 mb-0" style="color: #EFEFEF;">&copy; 2022 Casa do Pet, Inc</p>
       
-          <a href="/" class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
+          <a href="/home.html" class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
             <img src="/assets/icon.png" alt="ícone" style="width: 54px; height: 52px;">
           </a>
       
           <ul class="nav col-md-4 justify-content-end">
-            <li class="nav-item"><a href="#" class="nav-link px-2" style="color: #EFEFEF;">Home</a></li>
-            <li class="nav-item"><a href="#" class="nav-link px-2" style="color: #EFEFEF;">Entrar</a></li>
-            <li class="nav-item"><a href="#" class="nav-link px-2" style="color: #EFEFEF;">Cadastrar-se</a></li>
-            <li class="nav-item"><a href="#" class="nav-link px-2" style="color: #EFEFEF;">Como Funciona</a></li>
+            <li class="nav-item"><a href="/home.html" class="nav-link px-2" style="color: #EFEFEF;">Home</a></li>
+            <li class="nav-item"><a href="/login.html" class="nav-link px-2" style="color: #EFEFEF;">Entrar</a></li>
+            <li class="nav-item"><a href="/cadastro.html" class="nav-link px-2" style="color: #EFEFEF;">Cadastrar-se</a></li>
+            <li class="nav-item"><a href="/comoFunciona.html" class="nav-link px-2" style="color: #EFEFEF;">Como Funciona</a></li>
           </ul>
         </footer>
       </div>
